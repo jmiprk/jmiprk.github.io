@@ -11,7 +11,7 @@ body {
 }
 
 footer {
-  height: 25vh;
+  /* height: 25vh; */
   padding: 10vh; 
   display: grid; 
   grid-template-columns: auto 1fr;
@@ -36,7 +36,7 @@ footer {
 
 header {
   background-color: #e5f3fd;
-  height: 100vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -90,23 +90,30 @@ header {
 
 .main-content .name {
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   color: #314488;
-  width: 100%;
+  width: 50%;
   text-align: center;
 }
 
 .main-content .name h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 .main-content .name p {
   color: #314488;
-  font-size: 1.2rem;
-  padding: 0 2.3rem;
+  font-size: 1rem;
+  padding: 0 2.5rem;
+}
+
+.main-content .name a{
+  color: #314488;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar.solid {
