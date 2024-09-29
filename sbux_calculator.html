@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my work</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="smile_favicon.png" sizes="16x16">
+    </link>
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: #ffffff">
+        <div class="navbar-container container">
+            <div>
+                <h1 class="navbar-brand">Jamie Park</h1>
+            </div>
+            <ul class="menu-items">
+                <li><a href="./index.html">about me</a></li>
+                <li><a href="./portfolio.html">my work</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="portfolio-content">
+        <div class="portfolio-container" id="overview">
+            <h1>Is the Starbucks App a Magic Eraser?</h1>
+            <h2>Starbucks Nutrition Calculator</h2>
+            <br>
+            <p>Role: R, App Development</p>
+            <p>Timeline: January 2023</p>
+        </div>
+        <div class="portfolio-container" id="demo">
+            <span class="type" style="--n:96">
+                <i>"Could I get an iced latte with one pump of mocha sauce and two pumps of brown sugar syrup?"</i>
+            </span>
+            <br>
+            <video controls autoplay muted>
+                <source src="sbux_calculator_demo.mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-links">
+                <div class="proj-1">
+                    <button><a href="https://github.com/jmiprk/starbucks-nutrition-calculator/blob/main/app.R"
+                            target="_blank">view source<i class="fas fa-external-link-alt"></i></a>
+                    </button>
+                    <button><a href="https://jmiprk.shinyapps.io/starbucks_nutrition_calculator/" target="_blank">check
+                            it out<i class="fas fa-external-link-alt"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-container" id="motivation">
+            <div class="left">
+                <h1>The Motivation</h1>
+                <img src="sbux_feedback.png">
+            </div>
+            <div class="right">
+                <p>The Starbucks mobile app and website generate nutrition labels only for standard beverages
+                    without modifications. For example, an Iced Americano is listed as having 15 calories and 0g of
+                    sugar.
+                    However, if a customer orders an Iced Americano with 5 pumps of White Mocha, the app will still
+                    report 15
+                    calories and 0g of sugar, which is inaccurate.</p>
+                <br>
+                <p>
+                    I hope to address this lack of transparency by developing an interactive Shiny app that allows
+                    users to input their Starbucks order and receive an accurate nutrition label reflecting all
+                    customizations.
+                </p>
+                <br>
+                <p>
+                    <b>Customers have a right to know what they're really consuming!</b>
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-container" id="process">
+            <div class="left">
+                <h1>The Process</h1>
+            </div>
+            <div class="right">
+                <p><b>
+                        1. Data Collection</b>
+                    <br> The nutritional content of standardized Starbucks recipes was readily available on
+                    Kaggle, and I used it as the foundation from which users could add or subtract. However,
+                    data on
+                    customizations (e.g. syrups) was less accessible, so I gathered it from
+                    various
+                    online sources. I cross-referenced and validated some of this data with information shared by
+                    baristas
+                    on
+                    platforms like Reddit.
+                </p>
+                <br>
+                <p>
+                    <b>2. Data Wrangling</b><br>Fortunately, the data was clean and required minimal
+                    processing.
+                </p>
+                <br>
+                <p> <b>3. App Development</b><br>I used reactive values and events in R so that the Shiny app
+                    <i>dynamically</i> updates nutritional facts based on the users unique beverage details. Now, adding
+                    pump of syrup will properly increase the amount of calories, sugar, etc. in the drink.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="text">
+            <a href="mailto:jamiepark1205@gmail.com">let's chat!</a>
+        </div>
+        <div class="logo-container">
+            <a href="https://github.com/jmiprk" target="_blank"><i class="fab fa-github fa-2x"
+                    style="color:#314488"></i></a>
+            <a href="https://www.linkedin.com/in/jmiprk/" target="_blank"><i class="fab fa-linkedin fa-2x"
+                    style="color:#314488"></i></a>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
